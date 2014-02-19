@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Server::Status::VERSION
   spec.authors       = ["Daniel Harlea"]
   spec.email         = ["daniel.harlea@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Example / test using Sinatra to expose a web service.}
+  spec.description   = %q{Example of using Sinatra to build a web service.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -18,6 +18,10 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.5"
-  spec.add_development_dependency "rake"
+  spec.add_development_dependency	"bundler", "~> 1.5"
+  spec.add_development_dependency	"rake"
+  spec.add_runtime_dependency		'log4r'
+  spec.add_runtime_dependency		'sinatra'
+  spec.add_runtime_dependency		'activesupport'
+  spec.add_runtime_dependency		'json'
 end
