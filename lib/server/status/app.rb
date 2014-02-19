@@ -15,4 +15,11 @@ class Status < Sinatra::Base
     result.to_json
   end
 
+  get '/status', :provides => 'json' do
+    result = {}
+    result[:status] = 'OK'
+    result[:timestamp] = Time.now
+    result.to_json
+  end
+
 end

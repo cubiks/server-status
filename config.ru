@@ -6,6 +6,4 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require 'server/status/app.rb'
 
-map "/" do
-  run Status
-end
+run Status
