@@ -16,9 +16,13 @@ Or install it yourself as:
 
     $ gem install server-status
 
+    or
+
+    $ rake install
+
 ## Usage
 
-TODO: Write usage instructions here
+server-status
 
 ## Contributing
 
